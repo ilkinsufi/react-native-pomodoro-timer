@@ -6,7 +6,9 @@ import { colors } from "../utils/colors";
 export const Focus = () => {
   return (
     <View style={styles.container}>
-     <TextInput/>
+      <View style={styles.input}>
+        <TextInput label="Nəyə fokuslanmaq istəyirsən?" />
+      </View>
     </View>
   );
 };
@@ -14,6 +16,11 @@ export const Focus = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
+  },
+  input: {
+    flex: 0.5,
+    padding: 25,
+    justifyContent: "top",
   },
   text: {
     color: colors.white,
