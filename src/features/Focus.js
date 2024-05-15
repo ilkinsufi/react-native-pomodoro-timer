@@ -1,13 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { View, Text, StyleSheet } from "react-native";
 import { TextInput } from "react-native-paper";
 import { colors } from "../utils/colors";
 
 export const Focus = () => {
+  const [subject, setSubject] = useState(null);
+  console.log(subject);
   return (
     <View style={styles.container}>
       <View style={styles.input}>
-        <TextInput label="Nəyə fokuslanmaq istəyirsən?" />
+        <TextInput
+          onChangeText={setSubject}
+          label="Nəyə fokuslanmaq istəyirsən?"
+        />
       </View>
     </View>
   );
