@@ -4,7 +4,7 @@ import { TextInput } from "react-native-paper";
 import { colors } from "../utils/colors";
 import { RoundedButton } from "../components/RoundedButton";
 
-export const Focus = () => {
+export const Focus = ({addSubject}) => {
   const [subject, setSubject] = useState(null);
 
   return (
@@ -26,7 +26,7 @@ export const Focus = () => {
           label="Nəyə fokuslanmaq istəyirsən?"
         />
         <View style={styles.button}>
-          <RoundedButton title="+" size={50} />
+          <RoundedButton title="+" size={50} onPress={()=> addSubject(subject)}/>
         </View>
       </View>
     </View>
