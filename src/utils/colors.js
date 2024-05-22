@@ -9,4 +9,5 @@ export const colors = {
   purple: "#800080",
   cyan: "#00FFFF",
   magenta: "#FF00FF",
+  gray: "#808080",
 };

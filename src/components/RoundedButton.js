@@ -25,8 +25,8 @@ const styles = (size) => ({
     height: size,
     alignItems: "center",
     justifyContent: "center",
-    borderColor: colors.white,
+    borderColor: colors.gray,
     borderWidth: 2,
   },
-  text: { color: colors.white, fontSize: size / 3 },
+  text: { color: colors.gray, fontSize: size / 3 },
 });

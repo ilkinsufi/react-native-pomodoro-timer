@@ -12,13 +12,13 @@ export const Focus = ({addSubject}) => {
       <View style={styles.input}>
         <TextInput
           style={{
-            backgroundColor: "white",
+            backgroundColor: "gray",
             borderRadius: 2,
             padding: "offset",
             marginBottom: "offset",
             fontSize: 18,
             fontWeight: "bold",
-            color: colors.black,
+            color: colors.white,
             flex: 1,
             marginRight: 10,
           }}
